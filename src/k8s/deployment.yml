@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: spring-rag
+    version: "1.0"
+  name: spring-rag
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-rag
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: spring-rag
+    spec:
+      containers:
+        - name: spring-rag
+          image: docker.io/lereredelextreme/spring-rag
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          resources: {}
+status: {}
+
