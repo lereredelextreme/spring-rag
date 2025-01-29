@@ -21,7 +21,7 @@ public class SampleTest {
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
     private MockMvc restProjectMockMvc;
-/*
+
     @Test
     public void sampleTest() throws Exception {
         String value = "EFREI";
@@ -42,5 +42,5 @@ public class SampleTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(jsonPath("$.value").value("Hello "+value+"!"));
 
-    }*/
+    }
 }
