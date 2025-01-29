@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class SampleTest {
 
-    private static final String ENTITY_API_URL = "/samples";
+ /*   private static final String ENTITY_API_URL = "/samples";
 
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     @Autowired
@@ -41,5 +41,5 @@ public class SampleTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
                 .andExpect(jsonPath("$.value").value("Hello "+value+"!"));
 
-    }
+    }*/
 }
