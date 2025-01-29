@@ -10,8 +10,8 @@ import java.util.List;
 
 @Repository
 public interface DocumentRepository extends JpaRepository<Document, Long> {
-@Query(
-        "select distinct new fr.efrei.rag.repository.dto.DocumentDTO(document.title) from Document document"
-)
-List<DocumentDTO> findAllDocumentDTO();
+    @Query(
+            "select distinct new fr.efrei.rag.repository.dto.DocumentDTO(document.title, document.content) from Document document"
+    )
+    List<DocumentDTO> findAllDocumentDTO();
 }
